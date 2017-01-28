@@ -24,6 +24,9 @@ app.use('/', index);
 //Create tasks
 app.use('/api', tasks);
 
+//Test git - Tony
+app.use(express.static(__dirname + "/views"));
+
 app.listen(port, function(){
     console.log("Server started on port " + port)
 });
